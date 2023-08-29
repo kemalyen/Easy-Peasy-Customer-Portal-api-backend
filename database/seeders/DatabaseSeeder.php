@@ -39,7 +39,7 @@ class DatabaseSeeder extends Seeder
             'customer_id' => 0
         ]);
 
-        $user = User::whereEmail('info@sendbox.uk')->first();
+        $user = User::whereEmail('admin@example.com')->first();
         $user->assignRole('Admin');
 
         // \App\Models\User::factory()->create([
