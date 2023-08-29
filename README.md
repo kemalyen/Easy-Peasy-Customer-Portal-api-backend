@@ -1,39 +1,17 @@
-## Quickstart with ReactJS InertiaJS and Laravel
+##  Easy Peasy Portal Backend API
 
-This demo project includes a quickstart using InertiaJS and ReactJS. Each branch includes a different feature.  
-
-[Inertia.js](https://inertiajs.com/)
-[Laravel](https://laravel.com/)
-[React](https://reactjs.org/)
+This demo project includes a quickstart using Sanctum Authentication for SPA and Eloquent Resources.  
 
 ## Installation
 
 First clone the reporsitory
-
-```sh
-git@github.com:kemalyen/reactjs-inertiajs-laravel.git 
-```
-
-
+ 
 Run composer to install PHP dependencies:
 
 ```sh
 composer install
 ```
-
-
-Later continue for javascript libraries
-
-```sh
-npm install
-```
-
-We need to build our assets files, this will start vite with preview site
-
-```sh
-npm run dev
-```    
-
+ 
 Don't forget to update environment!
 
 I prefer to use sqlite, easy and basic. This will also create 
@@ -62,10 +40,19 @@ And now start the built in server
 php artisan serve
 ```
 
-Our website must be running on 127.0.0.1 and Vite will serve the frontend codes on 127.0.0.1:5173.
+Our website must be running on localhost and Vite will serve the frontend codes on localhost:5173.
 
-Username: admin@email.com
+Username: admin@example.com
 Password: password
+
+Sample .env
+
+```sh
+FRONTEND_URL=http://localhost:5173
+
+SANCTUM_STATEFUL_DOMAINS=localhost:5173
+SESSION_DOMAIN=localhost
+```
 
 
 
